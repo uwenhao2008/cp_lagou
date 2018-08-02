@@ -35,6 +35,24 @@
                     <li class="resume"><span class="iconfont icon-collect">&#xe620;</span>完善在线简历</li>
                     <li class="resume"><span class="iconfont icon-collect">&#xe631;</span>上传简历附件</li>
                 </ul>
+                <ul class="tool-list clearfix">
+                <!--float：right,所以方向都反了-->
+                    <li class="tool-list-icon border-left">
+                        <i class="iconfont icon-smallApp">
+                            <span class="tool-name tool-name-right">微信扫一扫，用小程序打开</span>
+                        </i>
+                    </li>
+                    <li class="tool-list-icon border-left">
+                        <i class="iconfont icon-wechat">
+                            <span class="tool-name tool-name-middle">分享到微信</span>
+                        </i>
+                    </li>
+                    <li class="tool-list-icon">
+                        <i class="iconfont icon-jubao">
+                            <span class="tool-name tool-name-left">举报职位</span>
+                        </i>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -142,4 +160,54 @@ export default {
             float: right
             line-height: .56rem
             margin-left: .68rem
+        .tool-list
+          float: right
+          .tool-list-icon
+            position: relative
+            display: list-item
+            float: right
+            width: 40px
+            height: 20px
+            text-align: center
+            .iconfont
+              font-size: 18px
+              color: #c6ced0
+              cursor: pointer
+            .tool-name
+              display: none
+              position: absolute
+              bottom: 36px
+              left: 0
+              font-size: 14px
+              line-heigh: 18px
+              color: #555
+              border:2px solid #b7b7b7
+              background-color: #fff
+              padding: 0 2px
+              text-align: center
+              z-index: 22
+            .icon-jubao
+              &:before
+                content: "\e652"  // 貌似只能使用unicode 16进制的方式，不能使用 &#xe652;，因为&是stylus的关键字
+              &:hover
+                .tool-name-left   //hover要把元素hover对！！！~~~~~~~~~~
+                  display: inline
+                  width: 60px
+                  margin-left: -10px
+            .icon-wechat
+              &:before
+                content: "\e7e5"
+              &:hover
+                .tool-name-middle
+                  display: inline
+                  width: 70px
+                  margin-left: -14px
+            .icon-smallApp
+              &:before
+                content: "\e619"
+              &:hover
+                .tool-name-right
+                  display: inline
+                  width: 170px
+                  margin-left: -70px
 </style>

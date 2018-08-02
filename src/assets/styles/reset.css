@@ -31,3 +31,9 @@ a {color: #25a4bb;text-decoration: none;}
 .clearfix:after {
     clear: both
 }
+.fr{
+    float: right
+}
+.fl{
+    float: left
+}
