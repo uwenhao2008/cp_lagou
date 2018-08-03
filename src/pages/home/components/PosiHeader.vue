@@ -140,6 +140,8 @@ export default {
               margin-left: 17px
               padding: 0 33px
               border-radius: 3px
+              &:hover
+                background: #00a57f
           .job-collection
             float: right
             display: inline-block
@@ -151,6 +153,8 @@ export default {
             color: #00b38a
             border:1px solid #00b38a
             border-radius: 3px
+            &:hover
+              color: #00a57f
             .icon-collect
               margin-right: 3px
         .resume-select
@@ -173,6 +177,8 @@ export default {
               font-size: 18px
               color: #c6ced0
               cursor: pointer
+              &:hover
+                color: #b7b7b7
             .tool-name
               display: none
               position: absolute
