@@ -164,6 +164,8 @@ export default {
             float: right
             line-height: .56rem
             margin-left: .68rem
+            &:hover
+              color: #00b38a
         .tool-list
           float: right
           .tool-list-icon
@@ -177,8 +179,6 @@ export default {
               font-size: 18px
               color: #c6ced0
               cursor: pointer
-              &:hover
-                color: #b7b7b7
             .tool-name
               display: none
               position: absolute
